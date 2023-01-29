@@ -18,6 +18,6 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-output "instance_ip_addr" {
+output "instance_ip" {
   value = data.aws_ami.ubuntu.id
 }
